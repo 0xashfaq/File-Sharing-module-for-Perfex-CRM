@@ -1,6 +1,6 @@
 # File-Sharing-module-for-Perfex-CRM-XSS
 
-A Stored Cross-Site Scripting (XSS) vulnerability was discovered in the File Sharing module of Perfex CRM. The vulnerability exists in the `&content` parameter within the Discussion section. By injecting malicious scripts into this parameter, an attacker can store the script within the application. When the content is viewed by other users, the malicious script is executed in their browsers, potentially leading to the compromise of user data, session hijacking, or other malicious actions.
+A Stored Cross-Site Scripting (XSS) vulnerability was discovered in the File Sharing module of Perfex CRM. The vulnerability exists in the `content` parameter within the Discussion section. By injecting malicious scripts into this parameter, an attacker can store the script within the application. When the content is viewed by other users, the malicious script is executed in their browsers, potentially leading to the compromise of user data, session hijacking, or other malicious actions.
 
 # Steps to Reproduce:
 * Login to the Perfex CRM system with valid credentials.
