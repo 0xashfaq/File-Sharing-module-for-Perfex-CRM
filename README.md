@@ -33,3 +33,7 @@ Priority: u=1, i
 
 csrf_token_name=54dd532b592d3e37eb00c83fea787332&content=<iframe/onload=confirm("XSS")>&rel_id=4&rel_type=pur_order
 ```
+# Mitigation Recommendations:
+* Input Validation: Ensure proper sanitization and encoding of user inputs in the content parameter to prevent script injection.
+* Output Encoding: Apply output encoding to escape characters that could be interpreted as executable code in browsers.
+* Content Security Policy (CSP): Implement a robust Content Security Policy to minimize the impact of potential XSS attacks.
